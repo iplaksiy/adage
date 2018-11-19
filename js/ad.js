@@ -12,13 +12,13 @@
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 // set global vars
-// var leaf;
-var leaf = "${CUSTOM_MODEL_LEAF_NAME}";
+var url = window.location.href;
+// var leaf = "${CUSTOM_MODEL_LEAF_NAME}";
+var leaf = url.substring(url.indexOf("=") + 1);
 var leaftype;
 var data;
 var wrapperWidth;
 var wrapperHeight;
-var url = window.location.href;
 
 // resizing listener event
 // window.addEventListener("resize", buildAd);
@@ -62,6 +62,18 @@ if (leaf == "${CUSTOM_MODEL_LEAF_NAME}") {
 // build ad
 function buildAd(event) {
 
+  // get wrapper width
+  wrapperWidth = document.getElementById("wrapper").parentNode.offsetWidth;
+  wrapperHeight = document.getElementById("wrapper").parentNode.offsetHeight;
+
+  // make ad match iframe size
+  document.getElementById("ad").style.width = wrapperWidth + "px";
+  document.getElementById("ad").style.height = wrapperHeight + "px";
+  
+  // set ad width/height vars
+  var adWidth = document.getElementById("ad").offsetWidth;
+  var adHeight = document.getElementById("ad").offsetHeight;
+
   // total number of keys in json object
   var count = Object.keys(data.data).length;
 
@@ -82,23 +94,14 @@ function buildAd(event) {
   var headline = data.data[leaf].HEADLINE_1;
   var cta = data.data[leaf].CTA;
   // var url = data.data[leaf].URL;
-  var bg = data.data[leaf].BACKGROUND_IMAGE;
+  var bg = data.data[leaf].BACKGROUND_IMAGE.split('.').slice(0, -1).join('.') + "_" + adWidth + "x" + adHeight + ".png";
+  // var bgFull = bg.slice(0, 4) + adWidth + "x" + adHeight + ".jpg;
+  // var bgFull = bg.split('.').slice(0, -1).join('.');
+  console.log(bg);
 
   document.getElementById("headline").innerHTML = headline;
   document.getElementById("cta").innerHTML = cta;
   document.getElementById("ad").style.backgroundImage = "url(" + bg + ")";
- 
-  // get wrapper width
-  wrapperWidth = document.getElementById("wrapper").parentNode.offsetWidth;
-  wrapperHeight = document.getElementById("wrapper").parentNode.offsetHeight;
-
-  // make ad match iframe size
-  document.getElementById("ad").style.width = wrapperWidth + "px";
-  document.getElementById("ad").style.height = wrapperHeight + "px";
-  
-  // set ad width vars
-  var adWidth = document.getElementById("ad").offsetWidth;
-  var adHeight = document.getElementById("ad").offsetHeight;
   
   // set text var
   var txt = wrapperWidth + " x " + wrapperHeight;
@@ -116,37 +119,58 @@ function buildAd(event) {
 function styleAd(event) {
 
   switch(wrapperWidth + wrapperHeight) {
-    
+
+    // 300x600
+    case 900:
+      document.getElementById("logo").style.top = "32px";
+      document.getElementById("logo").style.width = "124px";
+      document.getElementById("headline").style.fontSize = "32px";
+      document.getElementById("cta").style.bottom = "48px";
+      break;
+
+    // 300x250
+    case 550:
+      document.getElementById("logo").style.top = "10px";
+      document.getElementById("logo").style.width = "84px";
+      document.getElementById("headline").style.fontSize = "24px";
+      document.getElementById("headline").style.marginTop = "38px";
+      document.getElementById("cta").style.bottom = "12px";
+      break;
+
     // 728x90
     case 818:
-      document.getElementById("headline").style.fontSize = "20px";
-      document.getElementById("headline").style.marginBottom = "8px";
-      document.getElementById("cta").style.padding = "4px 16px";
-      document.getElementById("action-box").style.width = "auto";
-      document.getElementById("action-box").style.height = "100%";
-      document.getElementById("action-box").style.padding = "12px 16px";
+      document.getElementById("logo").style.top = "14px";
+      document.getElementById("logo").style.left = "20px";
+      document.getElementById("logo").style.width = "100px";
+      document.getElementById("headline").style.fontSize = "24px";
+      document.getElementById("headline").style.width = "40%";      
+      document.getElementById("cta").style.bottom = "30px";
+      document.getElementById("cta").style.right = "20px";
       break;
 
     // 970x90
-    case 1030:
-      document.getElementById("action-box").style.flexDirection = "row";
-      document.getElementById("headline").style.alignSelf = "center";
-      document.getElementById("headline").style.fontSize = "18px";
-      document.getElementById("headline").style.margin = "0 12px 0 0";
-      document.getElementById("cta-wrapper").style.alignSelf = "center";
-      document.getElementById("logo").style.width = "36px";
-      document.getElementById("action-box").style.width = "auto";
+    case 1060:
+      document.getElementById("logo").style.top = "14px";
+      document.getElementById("logo").style.left = "36px";
+      document.getElementById("logo").style.width = "100px";
+      document.getElementById("headline").style.fontSize = "24px";
+      document.getElementById("headline").style.width = "60%";      
+      document.getElementById("cta").style.bottom = "30px";
+      document.getElementById("cta").style.right = "30px";
       break;
 
     // 300x50
     case 350:
-      document.getElementById("headline").style.margin = "0 0 2px 0";
-      document.getElementById("headline").style.fontSize = "10px";
-      document.getElementById("cta").style.padding = "2px 8px";
-      document.getElementById("cta").style.fontSize = "10px";
-      document.getElementById("action-box").style.width = "auto";
-      document.getElementById("action-box").style.padding = "6px 12px";
-      document.getElementById("logo").style.width = "27px"
+      document.getElementById("logo").style.top = "6px";
+      document.getElementById("logo").style.left = "6px";
+      document.getElementById("logo").style.width = "58px";
+      document.getElementById("headline").style.fontSize = "12px";
+      document.getElementById("headline").style.width = "36%";      
+      document.getElementById("cta").style.bottom = "8px";
+      document.getElementById("cta").style.right = "8px";
+      document.getElementById("cta").style.fontSize = "9px";
+      document.getElementById("cta").style.padding = "4px 10px";
+      document.getElementById("cta").style.width = "42px";
       break;
   }
 

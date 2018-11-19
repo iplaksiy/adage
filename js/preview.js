@@ -45,7 +45,7 @@ function buildIframes() {
 
 	var i = 0;
 	var count = Object.keys(data).length;
-	var iframe = "<iframe src'=ad.html' width='300' height='600'></iframe>";
+	var iframe = "<iframe src'=ad.html' width='' height=''></iframe>";
 
 	for (i = 0; i < count; i++) {
 

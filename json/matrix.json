@@ -2,58 +2,60 @@
   "data": [
     {
       "LEAF": 0,
-      "AUDIENCE": "deal_seeker",
+      "AUDIENCE": "none",
       "SEGMENT_ID": "tbd",
       "CHANNEL": "desktop",
-      "HEADLINE_1": "Generic fallback headline",
-      "HEADLINE_2": "Enjoy your bonus value on any Ziploc brand item",
-      "CTA": "Save Now",
-      "BACKGROUND_IMAGE": "img/bg00.jpg",
-      "URL": "https://www.officedepot.com/a/products/520824/Ziploc-Double-Zipper-Gal-Storage-Bags/"
+      "HEADLINE_1": "Triad helps brands engage shoppers at retail.",
+      "CTA": "Discover more",
+      "BACKGROUND_IMAGE": "img/bg00.png",
+      "URL": "https://www.triadretail.com"
     },
     {
       "LEAF": 1,
-      "AUDIENCE": "parent",
+      "AUDIENCE": "scj",
       "SEGMENT_ID": "tbd",
       "CHANNEL": "desktop",
-      "HEADLINE_1": "Save up to $5",
-      "HEADLINE_2": "Limited 4 per session",
-      "CTA": "Save Now",
-      "BACKGROUND_IMAGE": "img/bg01.jpg",
-      "URL": "https://www.officedepot.com/a/products/520824/Ziploc-Double-Zipper-Gal-Storage-Bags/"
+      "HEADLINE_1": "Triad helps SCJ engage shoppers at retail.",
+      "BACKGROUND_IMAGE": "img/bg00.png",
+      "URL": "https://www.triadretail.com"
     },
     {
       "LEAF": 2,
       "AUDIENCE": "foodie",
-      "SEGMENT_ID": "tbd",
+      "SEGMENT_ID": "pg",
       "CHANNEL": "desktop",
-      "HEADLINE_1": "Buy One Get One",
-      "HEADLINE_2": "Look for cupon on the HEB home page",
-      "CTA": "Save Now",
-      "BACKGROUND_IMAGE": "img/bg02.jpg",
-      "URL": "https://www.heb.com/?exp=instoreview"
+      "HEADLINE_1": "Triad helps P&G engage shoppers at retail.",
+      "CTA": "Discover more",
+      "BACKGROUND_IMAGE": "img/bg00.png",
+      "URL": "https://www.triadretail.com"
     },
     {
       "LEAF": 3,
-      "AUDIENCE": "travel",
+      "AUDIENCE": "jj",
       "SEGMENT_ID": "tbd",
       "CHANNEL": "mobile",
-      "HEADLINE_1": "$22 Instant Savings",
-      "HEADLINE_2": "On any Ziploc brand item",
-      "CTA": "Save Now",
-      "BACKGROUND_IMAGE": "img/bg03.jpg",
-      "URL": "https://www.officedepot.com/a/products/520824/Ziploc-Double-Zipper-Gal-Storage-Bags/"
+      "HEADLINE_1": "Triad helps J&J engage shoppers at retail.",
+      "CTA": "Discover more",
+      "BACKGROUND_IMAGE": "img/bg00.png",
+      "URL": "https://www.triadretail.com"
     },
     {
       "LEAF": 4,
-      "AUDIENCE": "teen",
+      "AUDIENCE": "unilever",
       "SEGMENT_ID": "tbd",
       "CHANNEL": "mobile",
-      "HEADLINE_1": "Save up to $5",
-      "HEADLINE_2": "Limit 4 per session",
-      "CTA": "Save Now",
-      "BACKGROUND_IMAGE": "img/bg04.jpg",
-      "URL": "https://www.officedepot.com/a/products/520824/Ziploc-Double-Zipper-Gal-Storage-Bags/"
+      "HEADLINE_1": "Triad helps Unilever engage shoppers at retail.",
+      "BACKGROUND_IMAGE": "img/bg00.png",
+      "URL": "https://www.triadretail.com"
+    },
+    {
+      "LEAF": 5,
+      "AUDIENCE": "loreal",
+      "SEGMENT_ID": "tbd",
+      "CHANNEL": "mobile",
+      "HEADLINE_1": "Triad helps L’Oreal engage shoppers at retail.",
+      "BACKGROUND_IMAGE": "img/bg00.png",
+      "URL": "https://www.triadretail.com"
     }
   ]
 }

@@ -46,6 +46,7 @@
       "SEGMENT_ID": "tbd",
       "CHANNEL": "mobile",
       "HEADLINE_1": "Triad helps Unilever engage shoppers at retail.",
+      "CTA": "Discover more",
       "BACKGROUND_IMAGE": "img/bg00.png",
       "URL": "https://www.triadretail.com"
     },
@@ -55,6 +56,7 @@
       "SEGMENT_ID": "tbd",
       "CHANNEL": "mobile",
       "HEADLINE_1": "Triad helps L’Oreal engage shoppers at retail.",
+      "CTA": "Discover more",
       "BACKGROUND_IMAGE": "img/bg00.png",
       "URL": "https://www.triadretail.com"
     }

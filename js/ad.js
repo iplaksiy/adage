@@ -164,7 +164,7 @@ function styleAd(event) {
       document.getElementById("logo").style.top = "6px";
       document.getElementById("logo").style.left = "6px";
       document.getElementById("logo").style.width = "58px";
-      document.getElementById("headline").style.fontSize = "12px";
+      document.getElementById("headline").style.fontSize = "11px";
       document.getElementById("headline").style.width = "36%";      
       document.getElementById("cta").style.bottom = "8px";
       document.getElementById("cta").style.right = "8px";

@@ -14,7 +14,9 @@
 // set global vars
 var url = window.location.href;
 // var leaf = "${CUSTOM_MODEL_LEAF_NAME}";
-var leaf = url.substring(url.indexOf("=") + 1);
+var urlParams = new URLSearchParams(window.location.search);
+var myParam = urlParams.get('leaf');
+var leaf = myParam || 0;
 var leaftype;
 var data;
 var wrapperWidth;

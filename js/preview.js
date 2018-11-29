@@ -55,13 +55,16 @@ function buildIframes() {
 
 		x = "a" + i;
 		console.log(data[x].width);
+    console.log(i);
 
 		document.querySelector("body").appendChild(document.createElement('iframe'));
 		document.querySelectorAll("iframe")[i].setAttribute("src", "ad.html?leaf=" + leaf);
 		document.querySelectorAll("iframe")[i].setAttribute("width", data[x].width);
 		document.querySelectorAll("iframe")[i].setAttribute("height", data[x].height);
 		document.querySelectorAll("iframe")[i].setAttribute("frameborder", 0);
-		document.querySelectorAll("iframe")[i].setAttribute("scrolling", "no");
+    document.querySelectorAll("iframe")[i].setAttribute("scrolling", "no");
+    document.querySelectorAll("iframe")[i].style.transitionDelay = 1.5 + i/6 + "s";
+    document.querySelectorAll("iframe")[i].style.opacity = "1";
 	}
 
 }

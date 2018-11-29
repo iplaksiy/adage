@@ -4,13 +4,17 @@ var data;
 var leaf;
 var url = window.location.href;
 
+var urlParams = new URLSearchParams(window.location.search);
+var myParam = urlParams.get('leaf');
+var leaf = myParam || 0;
+
 // check for leaf query string
-if (url.indexOf("leaf") > -1) {
-  leaf = url.substring(url.indexOf("=") + 1);
-}
-else {
-  leaf = 0;
-}
+// if (url.indexOf("leaf") > -1) {
+//   leaf = url.substring(url.indexOf("=") + 1);
+// }
+// else {
+//   leaf = 0;
+// }
 
 // get and parse json data
 (function getData() {

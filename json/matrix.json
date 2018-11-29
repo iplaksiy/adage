@@ -7,7 +7,13 @@
       "CHANNEL": "desktop",
       "HEADLINE_1": "Triad helps brands engage shoppers at retail.",
       "CTA": "Discover more",
-      "BACKGROUND_IMAGE": "img/bg00.png",
+      "BACKGROUND_IMAGES": [
+        "img/bg00_300x50.png",
+        "img/bg00_300x250.png",
+        "img/bg00_300x600.png",
+        "img/bg00_728x90.png",
+        "img/bg00_970x90.png"
+      ],
       "URL": "https://www.triadretail.com"
     },
     {
@@ -17,7 +23,13 @@
       "CHANNEL": "desktop",
       "HEADLINE_1": "Triad helps SCJ engage shoppers at retail.",
       "CTA": "Discover more",
-      "BACKGROUND_IMAGE": "img/bg00.png",
+      "BACKGROUND_IMAGES": [
+        "img/bg00_300x50.png",
+        "img/bg00_300x250.png",
+        "img/bg00_300x600.png",
+        "img/bg00_728x90.png",
+        "img/bg00_970x90.png"
+      ],
       "URL": "https://www.triadretail.com"
     },
     {
@@ -27,7 +39,13 @@
       "CHANNEL": "desktop",
       "HEADLINE_1": "Triad helps P&G engage shoppers at retail.",
       "CTA": "Discover more",
-      "BACKGROUND_IMAGE": "img/bg00.png",
+      "BACKGROUND_IMAGES": [
+        "img/bg00_300x50.png",
+        "img/bg00_300x250.png",
+        "img/bg00_300x600.png",
+        "img/bg00_728x90.png",
+        "img/bg00_970x90.png"
+      ],
       "URL": "https://www.triadretail.com"
     },
     {
@@ -37,7 +55,13 @@
       "CHANNEL": "mobile",
       "HEADLINE_1": "Triad helps J&J engage shoppers at retail.",
       "CTA": "Discover more",
-      "BACKGROUND_IMAGE": "img/bg00.png",
+      "BACKGROUND_IMAGES": [
+        "img/bg00_300x50.png",
+        "img/bg00_300x250.png",
+        "img/bg00_300x600.png",
+        "img/bg00_728x90.png",
+        "img/bg00_970x90.png"
+      ],
       "URL": "https://www.triadretail.com"
     },
     {
@@ -47,7 +71,13 @@
       "CHANNEL": "mobile",
       "HEADLINE_1": "Triad helps Unilever engage shoppers at retail.",
       "CTA": "Discover more",
-      "BACKGROUND_IMAGE": "img/bg00.png",
+      "BACKGROUND_IMAGES": [
+        "img/bg00_300x50.png",
+        "img/bg00_300x250.png",
+        "img/bg00_300x600.png",
+        "img/bg00_728x90.png",
+        "img/bg00_970x90.png"
+      ],
       "URL": "https://www.triadretail.com"
     },
     {
@@ -57,7 +87,13 @@
       "CHANNEL": "mobile",
       "HEADLINE_1": "Triad helps L’Oreal engage shoppers at retail.",
       "CTA": "Discover more",
-      "BACKGROUND_IMAGE": "img/bg00.png",
+      "BACKGROUND_IMAGES": [
+        "img/bg00_300x50.png",
+        "img/bg00_300x250.png",
+        "img/bg00_300x600.png",
+        "img/bg00_728x90.png",
+        "img/bg00_970x90.png"
+      ],
       "URL": "https://www.triadretail.com"
     }
   ]

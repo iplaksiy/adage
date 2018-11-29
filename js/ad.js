@@ -14,7 +14,9 @@
 // set global vars
 var url = window.location.href;
 // var leaf = "${CUSTOM_MODEL_LEAF_NAME}";
-var leaf = url.substring(url.indexOf("=") + 1);
+var urlParams = new URLSearchParams(window.location.search);
+var myParam = urlParams.get('leaf');
+var leaf = myParam || 0;
 var leaftype;
 var data;
 var wrapperWidth;
@@ -94,7 +96,10 @@ function buildAd(event) {
   var headline = data.data[leaf].HEADLINE_1;
   var cta = data.data[leaf].CTA;
   // var url = data.data[leaf].URL;
-  var bg = data.data[leaf].BACKGROUND_IMAGE.split('.').slice(0, -1).join('.') + "_" + adWidth + "x" + adHeight + ".png";
+  //var bg = data.data[leaf].BACKGROUND_IMAGE.split('.').slice(0, -1).join('.') + "_" + adWidth + "x" + adHeight + ".png";
+  var bg = data.data[leaf].BACKGROUND_IMAGES.filter(function (image) {
+    return image.includes(adWidth + "x" + adHeight + ".png");
+  })[0];
   // var bgFull = bg.slice(0, 4) + adWidth + "x" + adHeight + ".jpg;
   // var bgFull = bg.split('.').slice(0, -1).join('.');
   console.log(bg);

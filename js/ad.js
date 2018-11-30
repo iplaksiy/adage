@@ -177,6 +177,9 @@ function styleAd(event) {
       document.getElementById("cta").style.padding = "4px 10px";
       document.getElementById("cta").style.width = "42px";
       break;
+
+    default:
+      document.getElementById("ad").innerHTML = "Ad size not supported :("
   }
 
   document.getElementById("ad").style.opacity = "1";

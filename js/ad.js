@@ -179,7 +179,7 @@ function styleAd(event) {
       break;
 
     default:
-      document.getElementById("ad").innerHTML = "Ad size not supported :("
+      document.getElementById("ad").innerHTML = "<div id='sad'>&#128561</div><div id='invalid'>Invalid ad size</div>"
   }
 
   document.getElementById("ad").style.opacity = "1";

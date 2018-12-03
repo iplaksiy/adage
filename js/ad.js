@@ -111,8 +111,14 @@ function buildAd(event) {
   // set text var
   var txt = wrapperWidth + " x " + wrapperHeight;
   
+  // check url for preview
+  var isPreviewURL = fileNameFromUrl(parent.location.pathname) === 'preview.html';
+
   // inject text
-  document.getElementById("value").innerHTML = txt;
+  if (isPreviewURL) {
+    document.getElementById("ad").style.border = '1px solid #b1b1b1';
+    document.getElementById("value").innerHTML = txt;
+  }
   
   // console.log(adWidth + ":" + adHeight);
 
@@ -184,4 +190,12 @@ function styleAd(event) {
 
   document.getElementById("ad").style.opacity = "1";
 
+}
+
+function fileNameFromUrl(url) {
+  var matches = url.match(/\/([^\/?#]+)[^\/]*$/);
+  if (matches.length > 1) {
+    return matches[1];
+  }
+  return null;
 }

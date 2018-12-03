@@ -31,7 +31,7 @@ body {
   flex-direction: column;
   text-align: center;
   font-family: 'Titillium Web', sans-serif;
-  border: 1px solid #b1b1b1;
+  /* border: 1px solid #b1b1b1; */
   opacity: 0;
   padding: 20px;
 }

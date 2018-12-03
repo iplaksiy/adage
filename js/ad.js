@@ -112,7 +112,15 @@ function buildAd(event) {
   var txt = wrapperWidth + " x " + wrapperHeight;
   
   // check url for preview
-  var isPreviewURL = fileNameFromUrl(parent.location.pathname) === 'preview.html';
+  var isPreviewURL = false;
+
+  try {
+    isPreviewURL = parent ? fileNameFromUrl(parent.location.pathname) === 'preview.html' : false;
+    // accessible
+  } catch(e){
+    // not accessible
+      
+  }
 
   // inject text
   if (isPreviewURL) {
